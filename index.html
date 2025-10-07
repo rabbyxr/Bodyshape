@@ -22,8 +22,8 @@
 <body>
 
   <!-- Header is here  -->
-<header class="w-screen h-26 bg-gray-950 flex items-center relative lg:justify-between ">
-  <nav class="lg:flex justify-between w-11/12 m-auto sticky top-0 ">
+<header class="w-screen h-26 bg-black flex items-center lg:justify-between sticky top-0 z-30 backdrop-blur-md">
+  <nav class="lg:flex justify-between w-11/12 m-auto ">
     <!-- Nav bar logo  -->
     <a href="#" class="flex-center">
 <img src="gym/logo_left.png" alt="logo_left">
@@ -47,7 +47,7 @@
         <i class="fa-solid fa-bars"></i>
     </button>
 <!-- Toggle section  -->
- <div id="nav-bar" class="hidden fixed z-10 inset-0 h-screen md:hidden flex-col  ">
+ <div id="nav-bar" class="hidden fixed z-100 bg-white inset-0 h-screen md:hidden flex-col  ">
 
 <div class="bg-gray-950 p-3 h-26  flex justify-between">
    <!-- logo  -->
@@ -80,7 +80,53 @@
   </nav>
 </header>
 
+<!-- Main section starts here  -->
+<main class="">
+<div class="banner bg-[url('/gym/banner.png')] object-cover bg-cover bg-center bg-no-repeat p-0 m-0 max-w-full h-330 font-[oswald] text-white aspect-auto relative">
 
+  <div class="max-w-4/12 flex flex-col gap-y-12  pl-32 ">
+
+   <h1 class="text-8xl text-white pt-26">
+  Transform Your Body
+</h1>
+
+<h3 class="text-2xl text-gray-400">We are dedicated to helping you Transform your body and mind through the power of fitness</h3>
+
+<div class="flex justify-center pt-16">
+  <button class="py-2 px-5 text-2xl  bg-gradient-to-br from-orange-600 to-orange-400 hover:brightness-90  border-2 border-transparent active:opacity-40">Get Started</button>
+  <button class="px-5 py-2 text-2xl border-2 border-orange-600 hover:opacity-80 active:opacity-40 flex items-center ml-6"><i class="fa-solid fa-circle-play text-2xl mr-2 text-orange-500"></i> <a href="#">Watch review</a></button>
+</div> 
+  </div>
+  
+<div class="banner_bottom_icons text-5xl w-2/12 p-4 flex justify-evenly absolute z-10 bottom-[-2rem] bg-orange-500 ">
+  <i class="fa-solid fa-g"></i>
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-brands fa-youtube"></i>
+</div>
+</div>
+
+
+<div class="nutrition_sec  bg-[url('/gym/roated_banner.png')] object-cover bg-cover bg-center w-full h-330 transform rotate-y-180">
+
+
+  <div class="text-white z-10 transform rotate-y-180">
+    <h1 class=" pt-16 ">Fitness Plans & Nutritions</h1>
+
+  </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</main>
 
 
 
