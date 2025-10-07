@@ -1,3 +1,14 @@
 @import "tailwindcss";
 
 /* npx @tailwindcss/cli -i .input.css -o output.css --watch */
+
+@utility g-text{
+@apply bg-gradient-to-r from-[#F66844] to-[#e77b08aa]  bg-clip-text text-transparent;
+}
+
+@utility flex-centerC{
+    @apply flex flex-col items-center;
+}
+@utility flex-center{
+    @apply flex justify-center items-center;
+}

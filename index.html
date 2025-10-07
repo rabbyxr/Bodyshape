@@ -3,11 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- font-awesome CDN link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Roboto Font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- Oswald font  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="icon" href="/gym/larry_wheels.jpeg">
   <link href="output.css" rel="stylesheet">
+  <title>Bodyshape</title>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+  <!-- Header is here  -->
+<header class="w-screen h-26 bg-gray-950 flex items-center relative lg:justify-between ">
+  <nav class="lg:flex justify-between w-11/12 m-auto sticky top-0 ">
+    <!-- Nav bar logo  -->
+    <a href="#" class="flex-center">
+<img src="gym/logo_left.png" alt="logo_left">
+<div class="flex-centerC">
+<span class="text-2xl font-[Roboto] font-medium  g-text">Bodyshape</span>
+<p class="font-[Roboto] g-text">Unleash your inner athlete</p>
+</div>
+<img src="gym/logo_right.png" alt="logo_right">
+    </a>
+
+    <!-- Nav sections  -->
+<ul class="text-white font-[Roboto] text-[1.2rem] w-4/12 hidden lg:flex  lg:w-6/12 flex-center justify-around">
+  <li><a href="#" class="border-b-4 border-transparent hover:border-orange-500 pb-2 p-2 transition-all duration-300">Home</a></li>
+  <li><a href="#" class="border-b-4 border-transparent hover:border-orange-500 pb-2 p-2 transition-all duration-300">Services</a></li>
+  <li><a href="#" class="border-b-4 border-transparent hover:border-orange-500 pb-2 p-2 transition-all duration-300">About</a></li>
+  <li><a href="#" class="border-b-4 border-transparent hover:border-orange-500 pb-2 p-2 transition-all duration-300">Contacts</a></li>
+  <li><a href="#" class="ml-5 p-4 bg-gradient-to-br from-orange-600 to-orange-400 hover:brightness-90 active:opacity-40">Join Us</a></li>
+</ul>
+    <!-- Menu bar icon is here  -->
+    <button class="text-2xl p-2 cursor-pointer text-white lg:hidden " onclick="handleMenuBar()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+<!-- Toggle section  -->
+ <div id="nav-bar" class="hidden fixed z-10 inset-0 h-screen md:hidden flex-col  ">
+
+<div class="bg-gray-950 p-3 h-26  flex justify-between">
+   <!-- logo  -->
+ <a href="#" class="flex-center p-4">
+<img src="gym/logo_left.png" alt="logo_left">
+<div class="flex-centerC">
+<span class="text-2xl font-[Roboto] font-medium  g-text">Bodyshape</span>
+<p class="font-[Roboto] g-text">Unleash your inner athlete</p>
+</div>
+<img src="gym/logo_right.png" alt="logo_right">
+    </a>
+
+    <button id="cross-icon" class="text-2xl p-4 cursor-pointer lg:hidden text-white " onclick="handleMenuBar()">
+<i class="fa-solid fa-xmark"></i>
+    </button>
+</div>
+
+<div class="mt-8 flex-centerC gap-8">
+<a href="#" class="text-black text-3xl font-[Roboto] font-medium p-3 hover:bg-gray-300 block rounded-sm active:opacity-20">Home</a>
+<a href="#" class="text-black text-3xl font-[Roboto] font-medium p-3 hover:bg-gray-300 block rounded-sm active:opacity-20">Services</a>
+<a href="#" class="text-black text-3xl font-[Roboto] font-medium p-3 hover:bg-gray-300 block rounded-sm active:opacity-20">About</a>
+<a href="#" class="text-black text-3xl font-[Roboto] font-medium p-3 hover:bg-gray-300 block rounded-sm active:opacity-20">Contacts</a>
+<button class="p-3 py-4 bg-gradient-to-br text-white text-3xl from-orange-600 to-orange-400 hover:brightness-90 active:opacity-40">
+  Join Us
+</button>
+</div>
+
+ </div>
+  </button>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
 </body>
+<script src="script.js"></script>
 </html>
